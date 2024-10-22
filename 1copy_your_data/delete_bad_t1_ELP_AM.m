@@ -1,7 +1,7 @@
 %% Delete bad T1s
 % AM 6/30/2023
 % PREEQUISITE EXCEL SHEET WITH SUBJECTLIST HAVING MULTIPLE T1s FOR EACH
-% SESSION
+% SESSION - Add Excel sheet
 
 % Change the following
 % addpath to script
