@@ -1,0 +1,19 @@
+#!/bin/bash
+#SBATCH --time=10:00:00
+#SBATCH --nodes=2
+#SBATCH --ntasks-per-node=8
+#SBATCH --mem-per-cpu=20GB
+
+
+module load GCC/5.4.0-2.26 
+module load OpenMPI/1.10.3
+module load FSL/5.0.10
+module load FSLeyes/0.15.0
+module load Python/2.7.12
+module load AFNI/17.2.04
+module load MATLAB/2019a
+module load MRIcron/1.0.20180614
+
+echo "main just for movement"
+cd /gpfs51/dors2/gpc/JamesBooth/JBooth-Lab/BDL/AM_ELP/typical_data_analysis/2preprocessing
+matlab -desktop -r "count_repaired_acc_update_ELP, quit"
